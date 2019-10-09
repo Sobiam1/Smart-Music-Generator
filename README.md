@@ -13,6 +13,7 @@ You can follow these steps to reproduce the same output:
 2. The repo contains the IPython Notebook for prediction task and music files (ex) as input to learn from as well as a Readme file.                      
 3. Run the ipynb to see the results. (if you can, try to compute on GPU environment to speed up the calculations ... Google Colab is a very good alternative and was chosen for this task)
 To know more about it https://colab.research.google.com/notebooks/welcome.ipynb
+4. The files we will feed to the model are: Numb.wav & Maid_with_Flaxon_Hair.mp3 (the wav file was too big for Github..This way you can convert it to a wav file). Another file Kalimba.mp3 is included in the repo to play with it if you want to change..
 
 ## Prerequisites
 
@@ -36,6 +37,13 @@ further checks:
 https://keras.io/activations/
 https://stackoverflow.com/questions/46620286/artificial-neural-network-relu-activation-function-and-gradients
 
+Output files: pred_song.wav (the first predicted song) and pred_song_updated.wav (the predicted song after retraining). The original.wav is the original song.
+
+![original_song](https://user-images.githubusercontent.com/54248182/66452417-76fce500-ea71-11e9-879b-471c0a697da2.png)
+![pred_song_update](https://user-images.githubusercontent.com/54248182/66452446-8a0fb500-ea71-11e9-86b3-a778e7d67503.png)
+
+These plots give an idea about their forms similarity as well as music signal data (amplitude and beats frequency)... 
+but be aware of the delay between them caused during the training... The output music is still more representative !
 
 ## Acknowledgments
 In this task, I tried to generate samples of just two songs together. This work can be pushed further to build a multi-song model and increasing the look_back parameter to make more input features at the disposal of your model should you have a very good computing power. 
